@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.guhcat.raven.pale_garden_plus.client.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ThickerFog"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
+ 

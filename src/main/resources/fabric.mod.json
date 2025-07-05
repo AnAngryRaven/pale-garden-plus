@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pale_garden_plus",
+  "version": "${version}",
+  "name": "Pale Garden Plus",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/pale_garden_plus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.guhcat.raven.pale_garden_plus.client.Pale_garden_plusDataGenerator"
+    ],
+    "client": [
+      "com.guhcat.raven.pale_garden_plus.client.Pale_garden_plusClient"
+    ],
+    "main": [
+      "com.guhcat.raven.pale_garden_plus.Pale_garden_plus"
+    ]
+  },
+  "mixins": [
+    "pale_garden_plus.mixins.json",
+    {
+      "config": "pale_garden_plus.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
