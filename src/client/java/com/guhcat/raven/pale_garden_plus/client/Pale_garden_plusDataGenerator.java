@@ -8,5 +8,8 @@ public class Pale_garden_plusDataGenerator implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+        pack.addProvider(ModelDatagen::new);
+        pack.addProvider(BlockLootDatagen::new);
+        pack.addProvider(TagDatagen::new);
     }
 }
